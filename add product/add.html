@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Product | Mono Store</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="website icon" type="png" href="../images/logo-small.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/products.HTML">Product</a></li>
+                    <li><a href="../about us/about.html">About</a></li>
+                    <li><a href="../contact us/contact.html">Contact</a></li>
+                    <li><a href="../login/account.html">Account</a></li>
+                </ul>
+            </nav>
+
+
+            <a href="Cart/cart.html">
+
+
+
+                <div class="cart">
+
+                    <img src="../images/cart.png" width="30px" height="30px" alt="">
+
+                  <i class="bi bi-cart2"></i>
+                  <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+
+                
+              </a>
+
+            <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+    
+</div>
+
+    <!-- Product Upload Section -->
+    <div class="small-container" style="margin: 100px auto;">
+        <div class="row">
+            <div class="col-2">
+                <h2>Sell Your Product</h2>
+                <form class="upload-form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="product-image">Product Image</label>
+                        <input type="file" id="product-image" name="product-image" accept="image/*" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-description">Description</label>
+                        <textarea id="product-description" name="description" 
+                                  rows="4" placeholder="Enter product details..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-price">Price ($)</label>
+                        <input type="number" id="product-price" name="price" 
+                               min="1" step="0.01" placeholder="Enter price" required>
+                    </div>
+
+                    <button type="submit" class="btn">List Product →</button>
+                </form>
+            </div>
+            <div class="col-2">
+                <img src="../images/upload-illustration.png" alt="Upload Illustration">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer from index.html -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../images/play-store.png" alt="">
+                        <img src="../images/app-store.png" alt="">
+
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/logo-white.png" alt="">
+                    <p>[purpose]</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://twitter.com/home">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - MonoStore</p>
+        </div>    </div>
+
+    <style>
+        .upload-form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            align-self: center;
+            grid-template-columns: 1000px;
+        }
+          @media (max-width: 1700px) {
+            .upload-form {
+              grid-template-columns: 800px;
+            }
+          }
+          
+          @media (max-width: 800px) {
+            .upload-form {
+              grid-template-columns: repeat(1, 400px);
+            }
+          }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            resize: vertical;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- Include existing JS if needed -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }    </script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mono Store | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="website icon" type="png" href="images/logo-small.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" width="125px" style="cursor: pointer;"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products/products.HTML">Product</a></li>
+                    <li><a href="about us/about.html">About</a></li>
+                    <li><a href="contact us/contact.html">Contact</a></li>
+                    <li><a href="login/account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="products/porducts detail/Cart/cart.html">
+                <div class="cart">
+                    <img src="images/cart.png" width="30px" height="30px" alt="">
+                  <i class="bi bi-cart2"></i>
+                  <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+              </a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div> 
+        <div class="row">
+            <div class="col-2">
+                <h1>Start from Simple!</h1>
+                <p>Give You A Simple Style!</p>
+                <a href="products/products.HTML" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/image1.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fab-container">
+    <div class="fab fab-icon-holder">
+        <i class="fa fa-plus"></i>
+    </div>
+
+    <ul class="fab-options">
+        <li>
+            <span class="fab-label">Profile</span>
+                <a href="login/profile/profile_settings_page.html">
+                    <div class="fab-icon-holder">
+                        <i class="fa fa-user"></i>
+                    </div>
+                </a>
+        </li>
+        <li>
+            <span class="fab-label">Add New Product</span>
+                <a href="add product/add.html">
+                    <div class="fab-icon-holder">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </a>
+        </li>
+        <!--<li>
+            <span class="fab-label">Twitter</span>
+            <div class="fab-icon-holder">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Linkedin</span>
+            <div class="fab-icon-holder">
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </li>-->
+    </ul>
+</div>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Discount Available on MonoStore</p>
+                <h1>Screaming Eagle</h1>
+                <small>Hailing from Napa Valley, California, Screaming Eagle wines have achieved legendary status for their limited production and exceptional quality. Known for their opulent, powerful, and concentrated style, these Cabernet Sauvignon-based wines offer rich flavors of black fruits, chocolate, graphite, and velvety tannins.</small>
+                    <a href="products/porducts detail/product-detail.html" class="buy"><span>Buy Now!</span></a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!---------------featured categarios------------------>
+    <div class="categarios">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-can.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-furit.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-vegetable.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------latest Products------------------>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="products/porducts detail/product-detail.html"><img src="images/product-1.jpg" href=""></a>
+                <h4>Screaming Eagle</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img style="height: 213px;" src="images/product-2.jpg">
+                <h4>Chinken Wings</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45</p>
+            </div>
+
+            <div class="col-4">
+                    <img src="images/product-3.jpg">
+                    <h4>Chips</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$15</p>
+            </div>
+                <div class="col-4">
+                    <img src="images/product-4.jpg">
+                    <h4>Tuffle</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$25</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" >
+                <h4>Egg</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$30</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>CoCa-Cola</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$200</p>
+            </div>
+
+            <div class="col-4">
+                    <img src="images/product-7.jpg">
+                    <h4>Rice</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$49.9</p>
+            </div>
+                <div class="col-4">
+                    <img src="images/product-8.jpg">
+                    <h4>Sake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$100</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Olive Oil</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$39.9</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Dog Food</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$35.9</p>
+            </div>
+
+            <div class="col-4">
+                    <img src="images/product-11.jpg">
+                    <h4>Durian Mooncake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$50</p>
+            </div>
+                <div class="col-4">
+                    <img src="images/product-12.jpg">
+                    <h4>Crab</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+<!--------testimonial----->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="comment.html"><i class="fa fa-quote-left"></i>
+                    <p>I absolutely love shopping at the online supermarket! The convenience of being able to browse and purchase groceries from the comfort of my home is a game-changer. Plus, the extensive selection of products ensures that I can find everything I need. It saves me so much time and effort!</p>
+                    <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-1.png" alt="Sean Parker comment">
+                    <h3>Sean Parker</h3>
+                </div></a>
+                <div class="col-3">
+                    <a href="comment.html"></a><i class="fa fa-quote-left"></i>
+                    <p>The online supermarket has truly elevated my grocery shopping experience. I appreciate the user-friendly interface, which makes it easy to navigate through different categories and find specific items. The website's search functionality is excellent, allowing me to quickly locate products. It's a hassle-free way to shop for groceries.</p>
+                    <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.png" alt="Parker comment">
+                    <h3> Parker</h3>
+                </div></a>
+                <div class="col-3">
+                    <a href="comment.html"></a><i class="fa fa-quote-left"></i>
+                    <p>One of the standout features of the online supermarket is the reliable and efficient delivery service. I've had multiple orders delivered right to my doorstep on time and in perfect condition. The packaging is well-done, ensuring that perishable items remain fresh. The convenience of having groceries delivered to my home is a tremendous benefit for a busy individual like me.</p>
+                    <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/user-3.png" alt="Sean comment">
+                    <h3>Sean</h3>
+                </div></a>
+            </div>
+        </div>
+    </div>
+
+<!-------brands-------->
+    <div class= "brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                <a href="https://www.godrej.com/"><img src="images/logo-godrej.png"></a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.coca-colacompany.com/"><img src="images/logo-coca-cola.png"> </a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.oppo.com/"><img src="images/logo-oppo.png"></a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.paypal.com/"><img src="images/logo-paypal.png"></a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.philips.com"><img src="images/logo-philips.png"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+   <!-------footer ----------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>[purpose]</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://twitter.com/home">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - MonoStore</p>
+        </div>
+    </div>
+
+
+
+    
+    <!-----------js for toggle menu------------>
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+            }
+        </script>
+
+
+</body>
+</html>
+
+
+

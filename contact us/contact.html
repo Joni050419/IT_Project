@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+ * {
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #36454f;
+  max-width: 100%;
+  height: 100vh;
+} 
+
+.container112233 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container112233 .contact_data {
+  background: #fff;
+  width: 600px;
+  border-radius: 02px;
+  border-top: 04px solid #FE347E;
+  margin: 0 10px;
+}
+
+.container112233 .contact_data form {
+  padding: 0 1rem;
+}
+
+.container112233 .contact_data form input,
+textarea {
+  width: 95%;
+  margin: 05px 0 0 10px;
+  padding: 07px 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  border-radius: 05px;
+}
+
+.container112233 .contact_data h2 {
+  margin: 1.5rem;
+  border-bottom: 0.2rem #FE347E solid;
+  width: 25%;
+}
+
+.container112233 .contact_data label {
+  display: block;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.container112233 .contact_data button {
+  margin: 20px 10px;
+  border: none;
+  padding: 10px 20px;
+  background: #FE347E;
+  font-size: 1rem;
+  border-radius: 05px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container112233 .contact_data button:hover {
+  background: #FE347E;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.container112233 .contact_data2 {
+  background: #fff;
+  border-radius: 02px;
+  border-top: 04px solid #FE347E;
+  width: 400px;
+  margin: 0 10px;
+}
+
+.container112233 .contact_data2 ul {
+  list-style: none;
+}
+
+.container112233 .contact_data2 ul li {
+  margin: 1.5rem 1rem;
+}
+
+.container112233 .contact_data2 ul li i {
+  font-size: 1.4rem;
+  color: #FE347E;
+}
+
+.container112233 .contact_data2 ul li strong {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.container112233 .contact_data2 ul li p {
+  font-size: 14px;
+  margin-left: 35px;
+}
+
+.container112233 .contact_data2 .map iframe {
+  width: 90%;
+  height: 200px;
+  margin: 0 1rem;
+}
+
+@media (max-width: 1037px) {
+  .container112233 .contact_data,
+  .contact_data2 {
+    width: 80%;
+    margin: 10px 0px;
+  }
+  .container112233 .contact_data h2 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container112233 .contact_data2 {
+    width: 75%;
+    margin: 10px 0px;
+  }
+  .container112233 .contact_data h2 {
+    width: 50%;
+  }
+} 
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Responsive Contact Us Page in HTML and CSS</title>
+  </head>
+  <body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../products/products.HTML">Product</a></li>
+                        <li><a href="../">About</a></li>
+                        <li><a href="../">Contact</a></li>
+                        <li><a href="../login/account.html">Account</a></li>
+                    </ul>
+                </nav>
+    
+    
+                <a href="../products/porducts detail/Cart/cart.html">
+    
+    
+    
+                    <div class="cart">
+    
+                         <img src="../images/cart.png" width="30px" height="30px" alt=""> 
+    
+                      <i class="bi bi-cart2"></i>
+                      <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
+    
+                    
+                  </a>
+    
+                <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    
+        </div>
+    </div>
+
+
+
+
+<div class="content-wrapper01">
+
+    <div class="container112233">
+      <div class="contact_data2">
+        <ul>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <strong>Location:</strong>
+            <p>9 Harmony Rd, Chai Wan</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <strong>Email:</strong>
+            <p>info@example.com</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <strong>Call:</strong>
+            <p>+852 91234568</p>
+          </li>
+        </ul>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2052.4079909869247!2d114.2499601828766!3d22.264676262800755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404022fc0016e5b%3A0x6262498d867f5385!2sThe%20Chinese%20Foundation%20Secondary%20School!5e0!3m2!1sen!2shk!4v1698649016984!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="contact_data ">
+        <h2 style="    font-size: 30px;        ">Contact Us</h2>
+        <form action="#" style="width: 500px; height: 500px;">
+          <label for="">Name</label>
+          <input type="text" placeholder="Name" style="background-color: #fff; height: 40px;" required/>
+          <label for="" >Email</label>
+          <input type="email" placeholder="email" style="background-color: #fff; height: 40px;" required />
+          <label for="">Subject</label>
+          <input type="text" placeholder="text" style="background-color: #fff; height: 40px;" required />
+          <label for="">Message</label>
+          
+          <textarea name="" placeholder="Message" style="height: 20%;" id="" cols="30" rows="05" required></textarea>
+          <button id="myButton">Send Message</button> 
+
+        </form>          
+      </div>
+    </div>
+</div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../images/play-store.png" alt="">
+                        <img src="../images/app-store.png" alt="">
+
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/logo-white.png" alt="">
+                    <p>[purpose]</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - MonoStore</p>
+        </div>
+    </div>
+  </body>
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+  <script>
+document.getElementById("myButton").addEventListener("click", function(){
+ alert("success");
+});
+    </script>
+
+</html>

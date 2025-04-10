@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login -MononStore</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="website icon" type="png" href="images/logo-small.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/products.HTML">Product</a></li>
+                    <li><a href="../about us/about.html">About</a></li>
+                    <li><a href="../contact us/contact.html">Contact</a></li>
+                    <li><a href="../login/account.html">Account</a></li>
+                </ul>
+            </nav>
+
+
+            <a href="cart.html">
+
+
+
+                <div class="cart">
+
+                    <img src="../images/cart.png" width="30px" height="30px" alt="">
+
+                  <i class="bi bi-cart2"></i>
+                  <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+
+                
+              </a>
+
+            <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+</div>
+
+
+    <!----------Account----------->
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="../images/image1.png" width="100%" alt="">
+            </div>
+            <!-- Account Details -->
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                    <span>Register</span>
+                    <!-- <hr id="Indicator"> -->
+                   </div>
+                    <form class="formform" id="RegForm" >
+                        <input class="usr" type="text" placeholder="Username" name="" id="" required>
+                        <input type="email" style="background-color: #fff;" placeholder="Email" name="" id="" required>
+                        
+                        <div class="psw-inputbox">
+                        <input type="password"class="pwinput password-input" id="password-input" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^[]/&*_=+-])[A-Za-z\d@$!%[]/*?&]{10,}$"  placeholder="Password" required>
+                        <img src="../images/eye-close.png" alt="" id="eyeicon01">
+                       </div>
+                       
+                        
+
+                        <div class="psw-inputbox">
+                        <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+                        <img src="../images/eye-close2.png" alt="" id="eyeicon02">
+                        </div>
+                        
+                        <div id="reasons" class="reasons" style="font-size: 16px;" onclick="showDiv()"></div>
+
+                        <button type="submit" class="btn pure-button pure-button-primary">Register</button>
+                        <br>
+
+                        <p><b>Already have an account?</b><br><a href="account.html" style="font-size: 16px;">Sign-in Now</a></p>
+                    </form>
+
+                    <!-- <form id="RegForm">
+                        <input type="text" placeholder="Username" name="" id="">
+                        <input type="email" placeholder="Email" name="" id="">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+   <!-------footer ----------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../images/play-store.png" alt="">
+                        <img src="../images/app-store.png" alt="">
+
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/logo-white.png" alt="">
+                    <p>[purpose]</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://twitter.com/home">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - MonoStore</p>
+        </div>
+    </div>
+    <!-----------js for toggle menu------------>
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+            }
+        </script>
+    <!-- password validation -->
+    <script src="../js/script.js" defer></script>
+
+<!-- js for password eye -->
+<!-- <script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script> -->
+<script>
+    var password = document.getElementById("password-input")
+  , confirm_password = document.getElementById("confirm_password");
+
+// <!----eye_icon_for_setup_password------->
+  let eyeicon01 = document.getElementById("eyeicon01")
+// <!----eye_icon_for_confirm_password------->
+  let eyeicon02 = document.getElementById("eyeicon02") 
+
+// show text of password
+
+        eyeicon01.onclick = function(){
+            if(password.type == "password"){
+                password.type = "text";
+                eyeicon01.src = "../images/eye-open.png";
+            }else{
+                password.type = "password";
+                eyeicon01.src = "../images/eye-close.png";
+            }
+        }
+        eyeicon02.onclick = function(){
+            if(confirm_password.type == "password"){
+                confirm_password.type = "text";
+                eyeicon02.src = "../images/eye-open2.png";
+            }else{
+                confirm_password.type = "password";
+                eyeicon02.src = "../images/eye-close2.png";
+            }
+        }
+
+// match confirm password
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+
+
+<!-- <script>
+
+
+        function showDiv(){
+        if (document.getElementById("reasons").style.display === "none") {
+            document.getElementById("reasons").style.display = "block";
+        } else {
+            document.getElementById("reasons").style.display = "none";
+  }
+}
+
+
+
+</script> -->
+
+
+
+</body>
+</html>
+
+
+
